@@ -1,0 +1,18 @@
+The fetch() API replaced the XMLHttpRequest.
+
+We can chain .then responses to avoid "callback hell". This "chaining" is called "promise chaining".
+We can use the .catch method to catch all error of any of the repsonses. Place
+this .catch at the end of the .then.
+Promises can be in 1 of 3 states: Pendings, Fulfilled, Rejected.
+If you have multiple promises and want all promises to be fulfilled, then
+you should use the Promise.all method to make sure all promises succeed.
+If you only need one promise to be fulfilled, and don't care which one, then you
+should use Promise.any.
+
+The async keyword gives you a simpler way to work with asynchronous promise-based code.
+Add "async" at the start of a function makes it an async function.
+async and await allow you to write asynchronous functions that looks like synchronous code.
+
+Promises make it easier to express and reason about async operations without "callback hell".
+async and wait make it easier to build an operaiton from a series of consecutive async 
+function calls, avoiding the need to create explicit promise chains.
